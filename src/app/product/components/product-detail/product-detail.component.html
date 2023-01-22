@@ -1,0 +1,17 @@
+<app-header></app-header>
+<div *ngIf="product" >
+    <div>
+        <img [src]="product.imagen" alt="">
+    </div>
+    <div>
+        <ul>
+            <li>Nombre: {{product.nombre}} </li>
+            <li>Precio: {{product.precio | currency}} </li>
+        </ul>
+        <p> {{product.descripcion}}</p>
+    </div>
+    <!-- <button mat-raised-button (click)="createProduct()" >Crear</button>
+    <button mat-raised-button (click)="updateProduct()" >Actualizar</button>
+    <button mat-raised-button (click)="deleteProduct()" >Eliminar</button> -->
+</div>
+
